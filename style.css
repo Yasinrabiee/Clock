@@ -14,6 +14,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	background-color: var(--primary-color);
+	transition: all 200ms;
 }
 
 body.light{
@@ -21,7 +22,6 @@ body.light{
 	--white-color: #fff;
 	--black-color: #18191a;
 	--red-color: #e74c3c;
-	transition: 200ms;
 }
 
 body.dark{
@@ -29,7 +29,6 @@ body.dark{
 	--white-color: #18191a;
 	--black-color: #fff;
 	--red-color: #e74c3c;
-	transition: 200ms;
 }
 
 .container{
