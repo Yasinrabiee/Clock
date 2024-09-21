@@ -1,11 +1,11 @@
-*{
+* {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
 	user-select: none;
 }
 
-body{
+body {
 	font-family: sans-serif, Arial;
 	display: flex;
 	flex-direction: column;
@@ -17,28 +17,28 @@ body{
 	transition: all 200ms;
 }
 
-body.light{
+body.light {
 	--primary-color: #f6f7fb;
 	--white-color: #fff;
 	--black-color: #18191a;
 	--red-color: #e74c3c;
 }
 
-body.dark{
+body.dark {
 	--primary-color: #242526;
 	--white-color: #18191a;
 	--black-color: #fff;
 	--red-color: #e74c3c;
 }
 
-.container{
+.container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 60px;
 }
 
-.container .clock{
+.container .clock {
 	display: flex;
 	width: 400px;
 	aspect-ratio: 1;
@@ -51,14 +51,14 @@ body.dark{
 	position: relative;
 }
 
-.clock label{
+.clock label {
 	position: absolute;
 	inset: 20px;
 	text-align: center;
 	transform: rotate(calc(var(--i) * (360deg / 12)));
 }
 
-.clock label span{
+.clock label span {
 	display: inline-block;
 	font-size: 30px;
 	font-weight: 600;
@@ -66,7 +66,7 @@ body.dark{
 	transform: rotate(calc(var(--i) * (-360deg / 12)));
 }
 
-.container .dot{
+.container .dot {
 	position: absolute;
 	height: 10px;
 	aspect-ratio: 1;
@@ -74,7 +74,7 @@ body.dark{
 	justify-content: center;
 }
 
-.dot::before{
+.dot::before {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -85,7 +85,7 @@ body.dark{
 	border: 4px solid var(--red-color);
 }
 
-.dot .hand{
+.dot .hand {
 	position: absolute;
 	height: 130px;
 	width: 4px;
@@ -95,25 +95,25 @@ body.dark{
 	background: var(--red-color);
 }
 
-.hand.second{
+.hand.second {
 	height: 130px;
 	width: 4px;
 	background: var(--red-color);
 }
 
-.hand.minute{
+.hand.minute {
 	height: 120px;
 	width: 5px;
 	background: var(--black-color);
 }
 
-.hand.hour{
+.hand.hour {
 	height: 100px;
 	width: 8px;
 	background: var(--black-color);
 }
 
-.mode-switch{
+.mode-switch {
 	padding: 10px 20px;
 	border-radius: 10px;
 	font-size: 22px;
