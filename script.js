@@ -18,7 +18,9 @@ function changeTime() {
 
 changeTime();
 
-setInterval(changeTime(), 1000);
+setInterval(function () {
+	changeTime();
+}, 1000);
 
 if(localStorage.getItem('mode') == `dark`)
 	$(`body`).addClass(`dark`)
