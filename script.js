@@ -37,6 +37,6 @@ $(`.mode-switch`).click(function () {
 	else
 	{
 		$(this).html(`Dark Mode`);
-		localStorage.setItem(`mode`,`light`)
+		localStorage.setItem(`mode`,`light`);
 	}	
 });
