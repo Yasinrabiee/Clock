@@ -22,7 +22,7 @@ setInterval(function () {
 	changeTime();
 }, 1000);
 
-if(localStorage.getItem('mode') == `dark`)
+if(localStorage.getItem('mode') === `dark`)
 	$(`body`).addClass(`dark`)
 else
 	$(`body`).addClass(`light`)
@@ -32,11 +32,11 @@ $(`.mode-switch`).click(function () {
 	if ($(`body`).hasClass(`dark`))
 	{
 		$(this).html(`Light Mode`);
-		localStorage.setItem(`mode`,`dark`)
+		localStorage.setItem(`mode`, `dark`)
 	}
 	else
 	{
 		$(this).html(`Dark Mode`);
-		localStorage.setItem(`mode`,`light`);
+		localStorage.setItem(`mode`, `light`);
 	}	
 });
