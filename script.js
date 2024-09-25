@@ -22,20 +22,18 @@ setInterval(function () {
 	changeTime();
 }, 1000);
 
-if(localStorage.getItem('mode') === `dark`)
+if(localStorage.getItem(`mode`) === `dark`)
 	$(`body`).addClass(`dark`)
 else
 	$(`body`).addClass(`light`)
 
 $(`.mode-switch`).click(function () {
 	$(`body`).toggleClass(`dark`);
-	if ($(`body`).hasClass(`dark`))
-	{
+	if ($(`body`).hasClass(`dark`)) {
 		$(this).html(`Light Mode`);
 		localStorage.setItem(`mode`, `dark`)
 	}
-	else
-	{
+	else {
 		$(this).html(`Dark Mode`);
 		localStorage.setItem(`mode`, `light`);
 	}	
